@@ -13,41 +13,39 @@
 <body>
   <div class="main-content">
     <div class="account-container container">
-     <header class="site-header">
-      <h2 class="site-heading">Account settings</h2>
-      <a class="close" href="#"></a>
-     </header>
+      <header class="site-header">
+        <h2 class="site-heading">Account settings</h2>
+        <a class="close" href="#"></a>
+      </header>
       <div class="account-content">
         <img class="user-img" src="img/avatar.jpg" alt="User image" width="150" height="150"
         srcset="img/avatar.jpg 1x, img/avatar@2x.jpg 2x">
         <form class="account-form" action="https://echo.htmlacademy.ru" method="get">
-          <label class="account-label username" for="username">Username
-            <input class="account-input" type="text" id="username" name="Username" placeholder="Enter your username" required>
-          </label>
+          <label class="account-label" for="username">Username</label>
+          <input class="account-input username" type="text" id="username" name="Username" placeholder="Enter your username" required>
 
-    <div class="name-content">
-      <label class="account-label name" for="fname">First name
-        <input class="account-input" type="text" name="First name" id="fname" placeholder="Enter your first name">
-      </label>
+          <div class="name-content">
+            <label class="account-label name" for="fname">First name
+              <input class="account-input" type="text" name="First name" id="fname" placeholder="Enter your first name">
+            </label>
 
-      <label class="account-label name" for="lname">Last name
-        <input class="account-input" type="text" name="Last name" id="lname" placeholder="Enter your last name">
-      </label>
-    </div>
+            <label class="account-label name" for="lname">Last name
+              <input class="account-input" type="text" name="Last name" id="lname" placeholder="Enter your last name">
+            </label>
+          </div>
 
-          <label class="account-label email" for="email">Email
-            <input class="account-input" type="email" name="Email" id="email"  placeholder="Enter your email" required>
-          </label>
+          <label class="account-label email" for="email">Email</label>
+          <input class="account-input email-input" type="email" name="Email" id="email"  placeholder="Enter your email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$" required>
 
           <label class="account-label" for="bio">Bio</label>
           <textarea class="textarea-content" name="BIO" id="bio" placeholder="Tell us about yourself" required>  </textarea>
 
         </form>
       </div>
- <div class="button-content">
-  <button class="button" type="submit">Cancel</button>
-  <button class="button" type="submit">Save</button>
- </div>
+      <div class="button-content">
+        <button class="button" type="submit">Cancel</button>
+        <button class="button" type="submit">Save</button>
+      </div>
     </div>
   </div>
   <script src="js/main.js"></script>

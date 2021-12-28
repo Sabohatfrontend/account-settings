@@ -8,7 +8,7 @@ html{
 *,
 *::before,
 *::after{
-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body{
@@ -51,7 +51,6 @@ img{
 }
 
 /* SITE-HEADER */
-
 .site-header{
   padding-top: 45px;
   padding-bottom: 120px;
@@ -65,6 +64,7 @@ img{
   margin-left: 15%;
   margin-right: auto;
 }
+
 /* CLOSE BUTTON */
 .close {
   display: inline-block;
@@ -87,11 +87,10 @@ img{
   opacity: 0.8;
 }
 
-
-
 .close:hover{
   opacity: 0.9;
 }
+
 .close:active{
   opacity: 1;
 }
@@ -126,9 +125,9 @@ img{
 }
 
 .account-label{
-   line-height: 1.5;
-text-transform: uppercase;
-color: #a2a6a6;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #a2a6a6;
 }
 
 .account-input {
@@ -155,7 +154,7 @@ color: #a2a6a6;
 }
 
 .account-input:focus{
-outline: none;
+  outline: none;
 }
 
 .name{
@@ -164,10 +163,18 @@ outline: none;
 }
 
 .username,
-.email,
+.email-input,
 .name-content{
-margin-bottom: 50px;
-border-bottom: 1px solid #a2a6a6;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #a2a6a6;
+}
+
+.email-input:not(:placeholder-shown){
+  border-color: red;
+}
+
+.email-input:valid{
+  border-color: green;
 }
 
 .textarea-content{
@@ -182,7 +189,7 @@ border-bottom: 1px solid #a2a6a6;
 }
 
 .textarea-content:focus{
-outline: none;
+  outline: none;
 }
 
 .button-content{
@@ -196,7 +203,7 @@ outline: none;
   font-size: 36px;
   border: none;
   background-color: inherit;
-opacity: 0.6;
+  opacity: 0.6;
 }
 
 .button:hover{

@@ -70,15 +70,8 @@ img{
   display: inline-block;
   position: relative;
   text-decoration: none;
-  width: 22px;
-  height: 22px;
-}
-
-.close:hover{
-  opacity: 0.8;
-}
-
-.close:active{
+  width: 25px;
+  height: 50px;
   opacity: 0.6;
 }
 
@@ -88,9 +81,19 @@ img{
   top: 50%;
   left: 50%;
   content: "";
-  width: 25px;
-  height: 2px;
+  width: 30px;
+  height: 5px;
   background-color: black ;
+  opacity: 0.8;
+}
+
+
+
+.close:hover{
+  opacity: 0.9;
+}
+.close:active{
+  opacity: 1;
 }
 
 .close::after{
@@ -193,6 +196,15 @@ outline: none;
   font-size: 36px;
   border: none;
   background-color: inherit;
+opacity: 0.6;
+}
+
+.button:hover{
+  opacity: 0.8;
+}
+
+.button:active{
+  opacity: 1;
 }
 
 .button:not(:last-child){

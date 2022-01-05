@@ -112,6 +112,7 @@ img{
   padding: 120px 75px 75px 75px;
   z-index: 2;
   margin-bottom: 50px;
+  box-shadow: -10px 10px 20px 0 rgba(0, 0, 0, 0.2);;
 }
 
 .user-img {

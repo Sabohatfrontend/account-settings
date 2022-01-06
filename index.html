@@ -11,41 +11,46 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="main-content">
-    <div class="account-container container">
-      <header class="site-header">
-        <h2 class="site-heading">Account settings</h2>
-        <a class="close" href="#"></a>
-      </header>
-      <div class="account-content">
-        <img class="user-img" src="img/avatar.jpg" alt="User image" width="150" height="150"
-        srcset="img/avatar.jpg 1x, img/avatar@2x.jpg 2x">
-        <form class="account-form" action="https://echo.htmlacademy.ru" method="get">
-          <label class="account-label" for="username">Username</label>
-          <input class="account-input username" type="text" id="username" name="Username" placeholder="Enter your username" required>
-
-          <div class="name-content">
-            <label class="account-label name" for="fname">First name
-              <input class="account-input" type="text" name="First name" id="fname" placeholder="Enter your first name">
-            </label>
-
-            <label class="account-label name" for="lname">Last name
-              <input class="account-input" type="text" name="Last name" id="lname" placeholder="Enter your last name">
-            </label>
+  <div class="account-container container">
+    <div class="account-setting-wrapper">
+      <form class="account-form" action="POST">
+        <header class="account-setting-header">
+          <h1 class="account-setting-heading">Account-settings</h1>
+          <a class="close-link" href="#">
+            <img class="close-img" src="img/close-icon.svg" alt="Close" width="24" height="24">
+          </a>
+        </header>
+        <div class="account-settings-content">
+          <img class="avatar-img" src="img/avatar.jpg" alt="Avatar" width="60" height="60"
+          srcset="img/avatar.jpg 1x, img/avatar@2x.jpg 2x">
+          <div class="account-settings-group">
+            <label class="account-settings-label" for="username_id">Username</label>
+            <input class="account-settings-input" type="text" name="username" id="username_id" placeholder="Enter your username" required>
           </div>
-
-          <label class="account-label email" for="email">Email</label>
-          <input class="account-input email-input" type="email" name="Email" id="email"  placeholder="Enter your email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$" required>
-
-          <label class="account-label" for="bio">Bio</label>
-          <textarea class="textarea-content" name="BIO" id="bio" placeholder="Tell us about yourself" required>  </textarea>
-
-        </form>
-      </div>
-      <div class="button-content">
-        <button class="button" type="submit">Cancel</button>
+        <div class="name-content">
+          <div class="account-settings-group">
+            <label class="account-settings-label" for="firstname_id">Firstname</label>
+            <input class="account-settings-input" type="text" name="firstname" id="firstname_id" placeholder="Enter your firstname" required>
+          </div>
+          <div class="account-settings-group">
+            <label class="account-settings-label" for="lastname_id">Lastname</label>
+            <input class="account-settings-input" type="text" name="lastname" id="lastname_id" placeholder="Enter your lastname" required>
+          </div>
+        </div>
+          <div class="account-settings-group">
+            <label class="account-settings-label" for="username_id">Email</label>
+            <input class="account-settings-input" type="email" name="email" id="email_id" placeholder="Enter your email" required>
+          </div>
+          <div class="account-settings-group">
+            <label class="account-settings-label" for="bio_id">Bio</label>
+            <textarea class="account-settings-input textarea-field" type="text" name="bio" id="bio_id" placeholder="Tell us about yourself" required></textarea>
+          </div>
+        </div>
+        <div class="button-content">
+          <button class="button" type="button">Cancel</button>
         <button class="button" type="submit">Save</button>
-      </div>
+        </div>
+      </form>
     </div>
   </div>
   <script src="js/main.js"></script>

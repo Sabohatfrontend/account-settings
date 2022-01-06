@@ -54,10 +54,7 @@ img{
 .account-setting-wrapper {
   width: 500px;
   background-color: gold;
-  box-shadow: -5px 5px 9px 0px rgba(34, 60, 80, 0.2);
-}
-
-.account-form {
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .account-setting-header {
@@ -73,6 +70,15 @@ img{
 
 .close-link {
   display: block;
+  opacity: 0.6;
+}
+
+.close-link:hover{
+  opacity: 0.8;
+}
+
+.close-link:active{
+  opacity: 1;
 }
 
 .close-img {
@@ -87,7 +93,7 @@ img{
   left: 40px;
   background-color: #fff;
   padding: 60px 30px;
-  box-shadow: -5px 5px 9px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .avatar-img {
@@ -115,13 +121,25 @@ img{
 display: flex;
 }
 
+.name-content:not(:last-child){
+  margin-bottom: 30px;
+}
+
+.name-content .account-settings-group{
+  width: 50%;
+  margin-bottom: 0;
+}
+
 .account-settings-label {
+  text-transform: uppercase;
   margin-bottom: 10px;
   color: #555;
 }
 
 .account-settings-input {
-  padding: 5px;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 100%;
   border: 0;
   border-bottom: 1px solid rgb(158, 158, 158, 0.5);
